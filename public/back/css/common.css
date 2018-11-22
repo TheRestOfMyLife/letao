@@ -47,6 +47,10 @@ ul {
   height: 100%;
   background-color: #222d32;
   z-index: 999;
+  transition: left 1s;
+}
+.lt_aside.hidemenu {
+  left: -180px;
 }
 .lt_aside .brand {
   width: 100%;
@@ -105,6 +109,10 @@ ul {
   height: 2000px;
   padding-left: 180px;
   padding-top: 50px;
+  transition: all 1s;
+}
+.lt_main.hidemenu {
+  padding-left: 0px;
 }
 .lt_topbar {
   position: fixed;
@@ -114,6 +122,10 @@ ul {
   height: 50px;
   background-color: #3c8dbc;
   padding-left: 180px;
+  transition: all 1s;
+}
+.lt_topbar.hidemenu {
+  padding-left: 0px;
 }
 .lt_topbar .icon_left,
 .lt_topbar .icon_right {
@@ -123,4 +135,10 @@ ul {
   text-align: center;
   color: #fff;
   font-size: 20px;
+}
+
+.lt_content .echarts_left,
+.lt_content .echarts_right {
+  width: 48%;
+  height: 400px;
 }

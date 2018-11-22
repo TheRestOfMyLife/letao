@@ -26,7 +26,7 @@ $(function() {
   $(document).ajaxStart(function() {
     // 开启进度条
     NProgress.start();
-  })
+  });
 
   $(document).ajaxStop(function() {
     // 模拟网络延迟
