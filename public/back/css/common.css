@@ -1,6 +1,27 @@
 .body_bg {
   background-color: #222d32;
 }
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* 需求: 让所有表格的 th和td 内容居中 */
+.table.table-bordered th,
+.table.table-bordered td {
+  text-align: center;
+  vertical-align: middle;
+}
+
 .panel .panel-title {
   height: 40px;
   line-height: 40px;
@@ -9,4 +30,97 @@
 }
 .mt_150 {
   margin-top: 150px;
+}
+
+.mt_20 {
+  margin-top: 20px;
+}
+.red {
+  color: #a94442;
+}
+
+.lt_aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 180px;
+  height: 100%;
+  background-color: #222d32;
+  z-index: 999;
+}
+.lt_aside .brand {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background-color: #367fa9;
+}
+.lt_aside .brand a {
+  text-align: center;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.lt_aside .user {
+  height: 180px;
+  padding-top: 30px;
+}
+.lt_aside .user img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+.lt_aside .user p {
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-size: 18px;
+}
+.lt_aside .nav li a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 40px;
+  color: #fff;
+  border-left: 3px solid transparent;
+}
+.lt_aside .nav li a.current {
+  background-color: #1d1f21;
+  border-left: 3px solid #069;
+}
+.lt_aside .nav li i {
+  margin-right: 5px;
+}
+.lt_aside .nav li .child {
+  display: none;
+}
+.lt_aside .nav li .child a {
+  padding-left: 60px;
+}
+
+.lt_main {
+  height: 2000px;
+  padding-left: 180px;
+  padding-top: 50px;
+}
+.lt_topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #3c8dbc;
+  padding-left: 180px;
+}
+.lt_topbar .icon_left,
+.lt_topbar .icon_right {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
 }
