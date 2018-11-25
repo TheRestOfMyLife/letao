@@ -1,0 +1,102 @@
+/* 重置ul的默认样式 */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  display: block;
+  width: 100%;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+/* 头部导航 */
+.lt_container {
+
+  width: 100%;
+  height: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding-top: 45px;
+  padding-bottom: 55px;
+  position: relative;
+  overflow: hidden;
+}
+.lt_header {
+  width: 100%;
+  height: 45px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0 45px;
+  background-color: #006699;
+}
+.lt_header .icon-left,
+.lt_header .icon-right {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 0;
+  line-height: 45px;
+  text-align: center;
+  color: #fff;
+}
+.lt_header .icon-left {
+  left: 0;
+}
+.lt_header .icon-right {
+  right: 0;
+}
+.lt_header h3 {
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  font-weight: normal;
+  margin: 0;
+  line-height: 45px;
+}
+/* 底部导航 */
+.lt_footer {
+  width: 100%;
+  height: 55px;
+  background-color: #006699;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.lt_footer li {
+  float: left;
+  width: 25%;
+}
+.lt_footer li a {
+  display: block;
+  color: #fff;
+  padding-top: 8px;
+  text-align: center;
+}
+.lt_footer li a p {
+  margin: 0;
+  color: #fff;
+}
+.lt_footer li a.current {
+  color: orange;
+}
+.lt_footer li a.current p {
+  color: orange;
+}
+
+/* 身体区域 */
+.lt_main {
+  width: 100%;
+  height: 100%;
+  /* mui的区域滚动是基于定位的 */
+  position: relative;
+}
+
+
